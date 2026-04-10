@@ -27,7 +27,7 @@ const Header = () => {
       >
         {/* Logo */}
         <div className="logo">
-          <img src="/CG-Logo.png" alt="logo" />
+          <img src="./CG-Logo.png" alt="logo" />
         </div>
 
         {/* Blur overlay (mobile) */}
