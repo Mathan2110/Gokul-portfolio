@@ -1,0 +1,119 @@
+.hero-section{
+    padding-top: 140px;
+    gap: 20px   ;
+}
+
+.hero-section .hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.hero-section .hero-left h2{
+    font-size: 40px !important;
+    line-height: 48px;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.hero-section .hero-left h1{
+    font-size: 60px !important;
+    line-height: 68px;
+    color: #FFE879;
+    letter-spacing: 3px;
+    font-weight: 700 !important;
+    margin: 0px !important;
+}
+
+.hero-section .hero-left .typing-text{
+  font-weight: 500 !important;
+  color: #ffffff;
+}
+
+.hero-section .hero-left .cursor{
+    font-size: 60px !important;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0%{opacity:1;}
+  50%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.hero-section .hero-right{
+    width: 450px;
+    height: 100%;
+}
+
+.hero-section .hero-right img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.7s ease;
+}
+
+.hero-section .hero-right img:hover{
+    transform: scale(1.1);
+}
+
+.cta-btn-2{
+    background: linear-gradient(144deg, #FFE879, #FFE5A4);
+    font-size: 16px !important;
+    border-radius: 38px;
+    box-shadow: #191D28 0 25px 20px -5px;
+    color: #232837;
+    line-height: 1em;
+    padding: 11px 0px;
+    position: relative;
+    width:170px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 2s ease;
+    font-weight:700 !important;
+}
+
+.shine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: skew(30deg) translateX(-120%);
+    background-color: rgba(242, 242, 242, 0.7);
+    animation: shine 2s ease infinite;
+}
+
+@media screen and (max-width:1024px){ 
+    .hero-section{
+        padding: 15px 16px;
+        padding-top: 140px;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .hero-left{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .hero-section{
+        padding: 15px 16px;
+        padding-top: 140px;
+    }
+
+    .hero-section .hero-right{
+        width: 80%;
+    }
+
+    .hero-section .hero-left h1{
+        font-size: 26px !important;
+        line-height: 34px;
+    }
+    .hero-section .hero-left .cursor{
+        font-size: 26px !important
+    }
+}

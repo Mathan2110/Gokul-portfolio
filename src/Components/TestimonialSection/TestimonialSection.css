@@ -1,0 +1,147 @@
+/* ===== Testimonials Section ===== */
+
+#testimonial {
+  padding: 60px 0;
+}
+
+/* Title */
+.subti {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container */
+.testimonial-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Card */
+.testimonial-box {
+  width: 450px;
+  background: #232837;
+  padding: 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover */
+.testimonial-box:hover {
+  transform: scale(1.05);
+}
+
+/* Top */
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+/* Name */
+.name-user strong {
+  color: #fff;
+  font-size: 16px;
+}
+
+.name-user span {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Comment */
+.client-comment p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+/* Stars */
+.reviews {
+  color: #FFE879;
+}
+
+.reviews i {
+  margin-right: 3px;
+}
+
+/* Button */
+.btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 35px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(144deg, #FFE879, #FFE5A4);
+  color: #232837;
+  border-color: #232837;
+  transform: scale(1.1);
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .subti {
+    font-size: 38px;
+  }
+
+  .testimonial-box {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #testimonial {
+    padding: 30px 0;
+  }
+
+  .subti {
+    font-size: 28px;
+  }
+
+  .testimonial-box {
+    padding: 20px;
+  }
+
+  .client-comment p {
+    font-size: 13px;
+  }
+
+  .name-user strong {
+    font-size: 14px;
+  }
+
+  .name-user span {
+    font-size: 12px;
+  }
+}
